@@ -26,4 +26,4 @@
          (fn [n] (* n n))))
 
   "But they are often better written using the names of functions"
-  (= 25 (___ square)))
+  (= 25 ((fn [func](func 5)) square)))
